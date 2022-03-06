@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://shift-d.github.io/sitemap.xml
