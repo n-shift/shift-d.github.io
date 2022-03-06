@@ -1,0 +1,90 @@
+baseURL = 'https://shift-d.github.io'
+languageCode = 'en-us'
+title = "shift"
+theme = "PaperMod"
+paginate = 5
+enableEmoji = true
+enableRobotsTXT = true
+buildDrafts = true
+buildFuture = false
+buildExpired = false
+pygmentsUseClasses = true
+
+[minify]
+disableXML = true
+minifyOutput = true
+
+[params]
+env = "production"
+title = "shift"
+description = "Welcome to my page, here you might find posts about Rust and Lua stuff development"
+keywords = ["Blog", "Neovim", "Lua", "Rust"]
+author = "shift"
+DateFormat = "January 2, 2006"
+defaultTheme = "dark"
+disableThemeToggle = true
+ShowReadingTime = true
+ShowShareButtons = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+disableSpecial1stPost = false
+disableScrollToTop = false
+comments = false
+hidemeta = false
+hideSummary = false
+showtoc = true
+tocopen = false
+
+[params.assets]
+favicon = "https://img.icons8.com/cotton/64/000000/laptop--v5.png"
+
+[params.label]
+text = "shift"
+
+[params.homeInfoParams]
+Title = "Hello there, I'm shift!"
+Content = "Welcome to my page!"
+
+[[params.socialIcons]]
+name = "reddit"
+url = "https://reddit.com/u/sushift"
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/shift-d"
+
+[[params.socialIcons]]
+name = "discord"
+url = "https://discord.com/users/671602021530337292"
+
+[params.cover]
+hidden = true
+hiddenInList = true
+hiddenInSingle = true
+
+[params.fuseOpts]
+isCaseSensitive = false
+shouldSort = true
+location = 0
+distance = 1000
+treshold = 0.4
+minMatchCharLength = 0
+keys = ["title", "permalink", "summary", "content"]
+
+[[menu.main]]
+identifier = "categories"
+name = "categories"
+url = "/categories/"
+weight = 10
+
+[[menu.main]]
+identifier = "tags"
+name = "tags"
+url = "/tags/"
+weight = 20
+
+[markup.highlight]
+anchorLineNos = true
+codeFences = true
+guessSyntax = true
